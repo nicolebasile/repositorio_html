@@ -44,6 +44,27 @@ def registrar_nuevo_libro():
 
 def eliminar_ejemplar_libro():
     #completar
+    codigo_buscar = str(input("Ingrese el codigo del libro a buscar: "))
+    bandera = 0
+
+    for libro in libros:
+        cod = libro["cod"]
+
+        if codigo_buscar == cod:
+            
+            if libro["cant_ej_ad"] > 0:
+                libro["cant_ej_ad"] -= 1
+                bandera = 2
+            else:
+                bandera = 1
+
+    if bandera == 2:
+        print(f"El ejemplar del libro con código {codigo_buscar} fue eliminado exitosamente.")
+    elif bandera == 1:
+        print(f"El libro con código {codigo_buscar} no posee ejemplares adquiridos.")
+    else:
+        print(f"No exite libro con código {codigo_buscar}")
+
     return None
 
 def prestar_ejemplar_libro():

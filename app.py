@@ -33,6 +33,8 @@ while respuesta != "salir":
             print()
         elif int(opt) == 4:
             #completar
+            print("Eliminar un ejemplar de un libro:")
+            bibloteca.eliminar_ejemplar_libro()
             print()
         elif int(opt) == 5:
             #completar
