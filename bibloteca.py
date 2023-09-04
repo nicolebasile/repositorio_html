@@ -10,8 +10,21 @@ libros.append(l.libro3)
 
 def ejemplares_prestados():
     # completar
-    return None
+    for libro in libros:
+        cod = libro["cod"]
+        cant_ej_ad = libro["cant_ej_ad"]
+        cant_ej_pr = libro["cant_ej_pr"]
+        titulo = libro["titulo"]
+        autor = libro["autor"]
 
+        if cant_ej_pr == 1:
+            print(f"{titulo} de {autor} tiene {cant_ej_pr} ejemplar prestado")
+        elif cant_ej_pr > 1:
+            print(f"{titulo} de {autor} tiene {cant_ej_pr} ejemplares prestados")
+        else:
+            print(f"{titulo} de {autor} no tiene ejemplares prestados")
+
+            
 def registrar_nuevo_libro():
     nuevo_libro = l.nuevo_libro()
     #completar

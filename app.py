@@ -2,6 +2,7 @@
 # Alumnos: Basile Nicole,  Callegari Franco, Cechetto Juan Cruz
 
 import os
+import bibloteca
 
 print("Bienvenido!")
 respuesta = ''
@@ -11,7 +12,7 @@ def menu():
     print("2 - Gestionar Devolucion")
     print("3 - Registrar nuevo libro")
     print("4 - Elimiar ejemplar")
-    print("5 - Mostrar ejemplares perstados")
+    print("5 - Mostrar ejemplares prestados")
     print("6 - Salir")
 
 while respuesta != "salir":
@@ -33,6 +34,9 @@ while respuesta != "salir":
             print()
         elif int(opt) == 5:
             #completar
+            print("Lista de ejemplares prestados:")
+            print("")
+            bibloteca.ejemplares_prestados()
             print()
         elif int(opt) == 6:
             respuesta = "salir"
