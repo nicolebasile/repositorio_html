@@ -2,4 +2,6 @@
 
 ## Descripción
 
-Repositorio del TPI de Programación II. Hacer fork del repostorio y completar siguiendo las consigas del TPI publicadas en el CVG.
+Repositorio del TPI de Programación II.
+
+Alumnos del grupo: Basile Nicole,  Callegari Franco, Cechetto Juan Cruz
