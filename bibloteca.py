@@ -23,11 +23,23 @@ def ejemplares_prestados():
             print(f"{titulo} de {autor} tiene {cant_ej_pr} ejemplares prestados")
         else:
             print(f"{titulo} de {autor} no tiene ejemplares prestados")
-
+    
+    return None
             
 def registrar_nuevo_libro():
     nuevo_libro = l.nuevo_libro()
     #completar
+
+    libros.append(nuevo_libro)
+
+    cod = nuevo_libro["cod"]
+    cant_ej_ad = nuevo_libro["cant_ej_ad"]
+    titulo = nuevo_libro["titulo"]
+    autor = nuevo_libro["autor"]
+
+    print("Nuevo libro registrado:")
+    print(f"Nombre: {titulo}\nAutor: {autor}\nCódigo: {cod}\nEjemplares adquiridos: {cant_ej_ad}")
+
     return None
 
 def eliminar_ejemplar_libro():

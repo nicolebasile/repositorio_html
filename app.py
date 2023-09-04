@@ -28,6 +28,8 @@ while respuesta != "salir":
             print()
         elif int(opt) == 3:
             #completar
+            print("Registro de nuevo libro:")
+            bibloteca.registrar_nuevo_libro()
             print()
         elif int(opt) == 4:
             #completar

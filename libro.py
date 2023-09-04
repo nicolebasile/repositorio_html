@@ -8,7 +8,9 @@ libro3 = {'cod': 'adOd09UE', 'cant_ej_ad': 1, 'cant_ej_pr': 0, "titulo": "El có
 def nuevo_libro():
     #completar
     cod = generar_codigo()
-    cant_ej_ad = input("Ingrese la cantidad de ejemplares adquiridos: ")
+    cant_ej_ad = int(input("Ingrese la cantidad de ejemplares adquiridos: "))
+    while cant_ej_ad < 1:
+        cant_ej_ad = int(input("Ingrese un número válido: "))
     titulo = input("Ingrese el título del libro: ")
     autor = input("Ingrese el autor del libro: ")
 
